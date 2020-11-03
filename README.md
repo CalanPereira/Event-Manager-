@@ -1,2 +1,2 @@
-# Event-Manager-
+# Event-Manager
 **A java group Project**

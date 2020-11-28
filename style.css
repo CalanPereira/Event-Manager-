@@ -2,7 +2,7 @@ body {
         font-family: tahoma, helvetica, arial, sans-serif;
         font-size: 11px;
         text-align: center;
-        background: #d3d2d1;
+        background: #0b042b;
 }
 
 h3, p { 
@@ -31,7 +31,7 @@ a {
         margin: auto;
         text-align: left;
         width: 750px;
-        background: white;
+        background: rgb(129, 5, 5);
 }
 
 #wrapperi {
@@ -50,9 +50,9 @@ a {
 }
 
 #header {
-        background: #26618d;
-        border-bottom: 1px solid #fff;
-        border-top: 2px solid #fff;
+        background: #1c1f22;
+        border-bottom: 1px solid rgb(49, 8, 8);
+        border-top: 2px solid rgb(75, 14, 75);
         margin-bottom: 1px;
 }
 
@@ -107,7 +107,7 @@ a {
 
 * html #nav li { /* IE 5.x hack */
         padding-left: 20px;
-        padd\ing-left: 36px;
+        padding-left: 36px;
 }
 
 #nav a {
@@ -243,7 +243,7 @@ a {
 
 #footer {
         text-align: right;
-        background: #b7b7b8;
+        background: #1e1e25;
         color: #666;
         border-top: 2px solid #fff;
 }

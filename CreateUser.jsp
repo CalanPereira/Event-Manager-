@@ -13,7 +13,7 @@ String utype=request.getParameter("utype");
 	
 try{
                Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-                Connection con=DriverManager.getConnection("Jdbc:Odbc:orads","scott","tiger");
+                Connection con=DriverManager.getConnection("Jdbc:msql://127.0.0.1:3306/kalan","root","");
 		Statement st=con.createStatement();
 
                 String sql="select userid from WBMSlogin where userid='"+uid+"'";

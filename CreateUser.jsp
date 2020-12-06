@@ -12,11 +12,11 @@ String utype=request.getParameter("utype");
 
 	
 try{
-               Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection con=DriverManager.getConnection("Jdbc:mysql://127.0.0.1:3306/kalan","root","");
+               Class.forName("com.mysql.jdbc.Driver");
+                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/kalan","root","");
 		Statement st=con.createStatement();
 
-                String sql="select userid from WBMSlogin where userid='"+uid+"'";
+                String sql="select userid from wbmslogin where userid='"+uid+"'";
                 System.out.println(" Query : "+sql);
                 ResultSet rs=st.executeQuery(sql);
 
@@ -28,7 +28,7 @@ try{
                 }
                 else
                 {
-                   sql="insert into WBMSlogin values('"+uid+"','"+pass+"','"+mail+"','"+coll+"','"+dep+"','"+utype+"')";
+                   sql="insert into wbmslogin values('"+uid+"','"+pass+"','"+mail+"','"+coll+"','"+dep+"','"+utype+"')";
                    int n=st.executeUpdate(sql);
                         if(n>0)
                         {
